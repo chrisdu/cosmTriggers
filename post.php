@@ -38,7 +38,7 @@
 	  "%FEED_URL%" => $json->environment->feed,
 		"%DATASTREAM_ID%" => $json->triggering_datastream->id,
 		"%DATASTREAM_TIMESTAMP%" => $json->triggering_datastream->at,
-		"%DATASTREAM_CURRENT_VALUE%" => $json->triggering_datastream->value->current_value
+		"%DATASTREAM_CURRENT_VALUE%" => $json->triggering_datastream->value->value
 		);
 	$content = str_replace(array_keys($replacements), array_values($replacements), $content);
 	
